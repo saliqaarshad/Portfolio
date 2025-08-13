@@ -6,7 +6,8 @@
   <title>Saliqa Arshad Portfolio</title>
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+  <!--EmailJS Library --->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 
 
@@ -27,50 +28,66 @@
 
   </header>
 <!---==========================Home===================================-->
-  <section id="hero"class="hero">
-     <br><br><br><br>
-    <p class="availability">🟢 Available for work!</p>
-    <h1>I'm <span class="highlight">Full Stack</span> developer<br>creating modern web apps.</h1>
-    <p class="subtitle">
-      A frontend developer based in the 🌍.<br>
-      I'm passionate about building modern web applications using HTML, CSS, JavaScript, and MySQL.
-    </p>
-    <br><br>
-    <div class="buttons">
-      <a href="#" class="btn dark">Get in touch →</a>
-      <a href="#" class="btn light">Download CV ⬇</a>
-      <a href="#" class="icon">🔗</a>
-      <a href="#" class="icon">🐙</a>
+  <section id="hero" class="hero">
+  <div class="hero-content">
+    
+    <!-- Left: Text -->
+    <div class="hero-text">
+      <p class="availability">🟢 Available for work!</p>
+      <h1>I'm 
+        <span class="highlight">Saliqa Arshad</span> <br> a
+        <span class="highlight">Full Stack</span> developer<br>
+        creating modern web apps.
+      </h1>
+      <p class="subtitle">
+        Frontend developer passionate about creating modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and MySQL.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn dark">Get in touch →</a>
+        <a href="https://github.com/your-username" class="icon" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile" class="icon" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
-    <br><br><br><br>
-    </section>
-    <!---==========================About===================================-->
-  <section id="about" class="about-section">
-  <h1>About Me</h1>
-  <p>
-    I'm <strong>Saliqa Arshad</strong>, a final-year BSCS student passionate about technology and innovation.
-    My interests span across Web Development, Artificial Intelligence, UI/UX Design, and Flutter, with a strong focus on modern web development.
-  </p>
-  <p>
-    Over the years, I have worked on multiple exciting projects that challenged and enhanced my problem-solving and creative skills.
-    I'm always exploring new technologies to stay ahead in the evolving tech landscape.
-  </p>
-  <p>
-    I'm open to job roles, internships, and freelance opportunities where I can contribute, learn, and grow professionally.
-    If my skills match your needs, feel free to reach out!
-  </p>
-  <div class="tech-stack">
-    <img src="https://img.icons8.com/ios-filled/50/000000/html-5.png" alt="HTML5" class="icon-tech">
-    <img src="https://img.icons8.com/ios-filled/50/000000/css3.png" alt="CSS3" class="icon-tech">
-    <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png" alt="JavaScript" class="icon-tech">
-    <img src="https://img.icons8.com/ios-filled/50/000000/mysql.png" alt="MySQL" class="icon-tech">
-    <img src="https://img.icons8.com/ios-filled/50/000000/prototype.png" alt="UI/UX" class="icon-tech">
 
-    <img src="https://img.icons8.com/ios-filled/50/000000/artificial-intelligence.png" alt="AI" class="icon-tech">
-    <img src="https://img.icons8.com/ios-filled/50/000000/flutter.png" alt="Flutter" class="icon-tech">
+    <!-- Right: Image -->
+    <div class="hero-image">
+      <img src="assets/img/img.png" alt="Saliqa Arshad">
+    </div>
 
   </div>
 </section>
+
+    <!---==========================About===================================-->
+  <div class="about-container">
+    <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <p>
+            I'm <strong>Saliqa Arshad</strong>, a final-year BSCS student passionate about technology and innovation.
+            My interests span across Web Development, Artificial Intelligence, UI/UX Design, and Flutter, with a strong focus on modern web development.
+        </p>
+        <p>
+            Over the years, I have worked on multiple exciting projects that challenged and enhanced my problem-solving and creative skills.
+            I'm always exploring new technologies to stay ahead in the evolving tech landscape.
+        </p>
+        <p>
+            I'm open to job roles, internships, and freelance opportunities where I can contribute, learn, and grow professionally.
+            If my skills match your needs, feel free to reach out!
+        </p>
+        <div class="tech-stack">
+            <img src="https://img.icons8.com/ios-filled/50/000000/html-5.png" alt="HTML5" class="icon-tech">
+            <img src="https://img.icons8.com/ios-filled/50/000000/css3.png" alt="CSS3" class="icon-tech">
+            <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png" alt="JavaScript" class="icon-tech">
+            <img src="https://img.icons8.com/ios-filled/50/000000/mysql.png" alt="MySQL" class="icon-tech">
+            <img src="https://img.icons8.com/ios-filled/50/000000/prototype.png" alt="UI/UX" class="icon-tech">
+            <img src="https://img.icons8.com/ios-filled/50/000000/artificial-intelligence.png" alt="AI" class="icon-tech">
+            <img src="https://img.icons8.com/ios-filled/50/000000/flutter.png" alt="Flutter" class="icon-tech">
+        </div>
+    </section>
+</div>
 <!---==========================Experience===================================-->
 <section id="experience" class="experience-section">
   <h1>My Experience</h1>
@@ -82,101 +99,337 @@
         <h3><i class="fas fa-building"></i> PTCL (Pakistan Telecommunication Company Limited)</h3>
         <p class="role">Service Support Analyst</p>
         <p class="date"><i class="fas fa-calendar-alt"></i> 2021–2025</p>
-        <p>I collaborated on a project involving Service Order Forms with the Pakistan Telecommunication Authority (PTA), 
-          where I professionally handled service-related inquiries. This experience helped 
-          me build a strong foundation in networking concepts and service management processes.
+        <p>	Worked on a project with collaboration with PTA (Service Order Forms).
+<br>	Handled service-related inquiries professionally.
+	<br>Gained foundational knowledge in networking and service processes
+
+ .</p>
+        <div class="skills">
+  <span>Microsoft Office Suite</span>
+  <span>CRM Systems</span>
+  <span>Service Requests</span>
+  <span>Service Order Forms</span>
+</div>
+      </div>
+    </div>
+
+    <!------------------------------experience 2---------------------------->
+
+  
+    <div class="timeline-item">
+      <div class="bullet"></div>
+      <div class="content">
+        <h3><i class="fas fa-building"></i> EZITECH Institute  </h3>
+        <p class="role">AI Intern</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i>  july-september 2024</p>
+        <p>Completed a 3-month internship focusing on AI fundamentals.
+          <br> Focused on Machine Learning and Deep Learning Techniques
+          <br> Applied AI techniques in hands-on projects using Python,PyTorch,Pandas,Scikit-Learn.
+          <br> Also worked on Fine Tunning and LLM's such as Bart,Gemini and T5
+ .</p>
+        <div class="skills">
+          <span>Python</span>
+          <span>Pytorch</span>
+          <span>TenserFlow</span>
+          <span>OpenCv</span>
+          <span>Pandas</span>
+          <span>Scikit-Learn</span>
+          <span>NumPy</span>
+          <span>Matplotlib</span>
+          <span>Keras</span>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------experience 3---------------------------->
+
+  
+    <div class="timeline-item">
+      <div class="bullet"></div>
+      <div class="content">
+        <h3><i class="fas fa-building"></i> Developers-Hub </h3>
+        <p class="role"> Flutter Intern</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i>  june-july 2025</p>
+        <p>Completed a 2-month internship focused on mobile app development using the Flutter framework.<br>
+Gained	hands-on	experience	building	responsive	cross-platform applications.<br>
+Utilized key Flutter widgets and features to create clean UI and smooth user experiences.</p>
+        <div class="skills">
+          <span>Flutter</span>
+          <span>Dart</span>
+          <span>Firebase</span>
+          <span>Data persistence</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------experience 4---------------------------->
+  <div class="timeline-item">
+      <div class="bullet"></div>
+      <div class="content">
+        <h3><i class="fas fa-building"></i> IBM Python for Data Science </h3>
+        <p class="role">Online-Course</p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> 2024</p>
+        <p>	
+
+Completed training in Python programming and data science fundamentals. Gained skills in data manipulation, visualization, and exploratory analysis using Pandas, NumPy, and Matplotlib. Applied basic statistics and machine learning concepts with scikit-learn. Experienced in working with CSV, Excel, and JSON datasets while writing clean and efficient code.
+
+
+ .</p>
+        <div class="skills">
+          <span>Python </span>
+          <span>Pandas </span>
+          <span>NumPy</span>
+          <span>Matplotlib</span>
+          <span>Classification</span>
+          <span>Regression</span>
+          <span>TensorFlow/Keras</span>
+        </div>
+      </div>
+    </div>
+      <!-----------------------------experience 5=================-->
+  <div class="timeline-item">
+      <div class="bullet"></div>
+      <div class="content">
+        <h3><i class="fas fa-building"></i> NFTP </h3>
+        <p class="role">Web Development Course </p>
+        <p class="date"><i class="fas fa-calendar-alt"></i> july-september 2023</p>
+        <p>	Completed a foundational web development program covering front-end and basic back-end technologies. Gained practical skills in building responsive websites with HTML, CSS, and JavaScript, along with basic PHP for server-side scripting. Developed and customized WordPress sites, managing themes and plugins. Acquired knowledge in web design principles, interactivity, and dynamic content management using CMS tools.
+
  .</p>
         <div class="skills">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
+           <span>Bootstrap</span>
+           <span>PHP</span>
           <span>WordPress</span>
         </div>
       </div>
     </div>
-
-    <!-- Repeat .timeline-item for each entry -->
   </div>
 </section>
+
 <!---==========================Project===================================-->
+<div class="project-container">
 <section id="projects" class="projects-section">
   <h1>My Projects</h1>
-  <p>Projects I worked on. Each contains its own case study.</p>
+  <p>Projects I worked on.Each contains its own case study.</p>
+<br>
+  <!-- Tabs -->
+  <div class="tab-buttons">
+     <button class="tab-btn active" data-tab="all">All</button>
+    <button class="tab-btn" data-tab="web">Web </button>
+    <button class="tab-btn" data-tab="ai">AI </button>
+    <button class="tab-btn" data-tab="uiux">UI/UX</button>
+  </div>
 
   <div class="projects-slider">
     <button class="slider-btn left" onclick="scrollProjects('left')">&#8592;</button>
 
     <div class="projects-track" id="projects-track">
       <!----=============project1==========================-->
-      <div class="project-card">
-        <h3>Ecommerce Website</h3>
-        <img src="assets/img/project_1.jpeg" alt="Project 1">
-        <br><br>
-        <p><strong>Ecommerce</strong><br>
-          A custom-built ecommerce website developed using HTML, CSS, JavaScript, and Python. It features user-friendly product listings, a dynamic shopping cart, and secure checkout functionality. Designed with clean UI and responsive design, the site allows users to browse, add to cart, and purchase products seamlessly. Python powers the backend logic, including order handling and server-side operations.
+     <div class="project-card" data-category="web">
+    <h3>Glamour Groves</h3>
+    <img src="assets/img/project_1.jpeg" alt="Project 1">
+    <p>
+        <strong>Ecommerce Website</strong>
+        <br>
+        Custom-built eCommerce site using HTML, CSS, JavaScript, and Python with product listings, dynamic cart, secure checkout, responsive design, and backend order management.
+    </p>
+   <a href="https://example.com" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+
+</div>
+<!----=============project2==========================-->
+      <div class="project-card" data-category="web">
+        <h3>Carleton Cab Service</h3>
+        <br>
+        <img src="assets/img/project_2.jpeg" alt="Project 2"><br>
+        <p><strong>GoDaddy-Based Website</strong><br><br>
+          A responsive website built using GoDaddy’s website builder, featuring custom layouts, intuitive navigation, mobile-friendly design, and easy content management for an engaging online presence.
+
         </p>
-        <div class="tags" >
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>python</span>
+         <a href="https://example.com" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+      </div>
+      <!----=============project web==========================-->
+      <div class="project-card" data-category="web">
+        <h3>TechShod</h3><br>
+        <img src="assets/img/project_3.jpeg" alt="Project 3"><br>
+        <p><strong>Single-Page Website with PHP Contact Form</strong><br><br>
+          Created a responsive single-page client website with PHP contact form, ensuring user messages are securely sent to the company’s email for efficient communication.
+
+        </p>
+         <a href="https://example.com" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+      
+      </div>
+
+      <!----=============projectUI/UX==========================-->
+      <div class="project-card" data-category="uiux">
+        <h3>Portfolio</h3><br><br>
+        <img src="assets/img/project_5.jpeg" alt="Project 4"><br><br>
+        <p><strong>Portfolio UI Design</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
+        </p>
+         <a href="https://www.figma.com/proto/rpodt0xfwZB471WfgvNyrq/Saliqa-Arshad-Portfolio?page-id=0%3A1&node-id=1-23&viewport=948%2C648%2C0.76&t=DFnztr3Id5yGbslC-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
         
-        </div>
       </div>
-      <!----=============project2==========================-->
-      <div class="project-card">
-        <h3>Single Page Website</h3>
-        <img src="assets/img/project_2.jpeg" alt="Project 2">
-        <p><strong>Next-starter</strong><br>
-          A Next.js starter template packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools, and more.
+      <!----=============project UI/UX==========================-->
+      <div class="project-card" data-category="uiux">
+        <h3>Flyer</h3>
+        <img src="assets/img/uiux.jpg" alt="Project 4">
+        
+         <a href="https://www.figma.com/proto/ZBVC2y4TdUnZs9KJgVVkmT/Saliqa-Arshad?page-id=0%3A1&node-id=86-98&p=f&viewport=615%2C106%2C0.9&t=jl328fxKRCB6vfBk-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+        <!----=============project UI/UX==========================-->
+      <div class="project-card" data-category="uiux">
+        <h3>Prototype </h3>
+        <img src="assets/img/prototype.PNG" alt="Project 4">
+        
+         <a href="https://www.figma.com/proto/5qHc1WchyHE5b9m4sosEkL/Untitled?page-id=0%3A1&node-id=92-1576&p=f&viewport=461%2C162%2C0.15&t=220xtnx7MFLXLTkg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=92%3A1576" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+      <!------------------Project===================-->
+      <!----=============Email Spam Detection Using Logistic Regression==========================-->
+    <div class="project-card" data-category="ai">
+        <h3>Email Spam Detection Using Logistic Regression</h3><br><br>
+        <img src="assets/img/project_ai1.PNG" alt="Email Spam Detection Using Logistic Regression"><br><br>
+        <p><strong>Portfolio UI Design</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
         </p>
-        <div class="tags">
-          <span>Next.js</span>
-          <span>Tailwind</span>
-          <span>Shadcn/ui</span>
-          <span>Next-auth</span>
-          <span>Prisma</span>
-        </div>
+         <a href="https://emailspamdetectionlogisticregression-aykk9ftaxk7cvetstzbzyu.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
       </div>
-      <!----=============project3==========================-->
-      <div class="project-card">
-        <h3>UI/UX</h3>
-        <img src="assets/img/project_3.jpeg" alt="Project 3">
-        <p><strong>Portfolio</strong><br>
-          SocialHub is a next-generation social media app developed using Next.js and Nest.js.
+
+      <!----=============Email Spam Detection App=========================-->
+     <div class="project-card" data-category="ai">
+        <h3>Email Spam Detection using Decision Tree Regressor</h3><br><br>
+        <img src="assets/img/AI_2.png" alt="Email Spam Detection App"><br><br>
+        <p><strong>Email Spam Detection</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
         </p>
-        <div class="tags">
-          <span>Next.js</span>
-          <span>TypeScript</span>
-          <span>Nest.js</span>
-          <span>Tailwind</span>
-          <span>Prisma</span>
-        </div>
+         <a href="https://emailspamdetectorusingdecisiontreeregreappr-j9qyfytq4hx45u2ch2.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
       </div>
-      <!----=============project4==========================-->
-      <div class="project-card">
-        <h3>Ecommerce Website</h3>
-        <img src="assets/img/project_5.png" alt="Project 1">
-        <p><strong>Next-starter</strong><br>
-          A Next.js starter template packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools, and more.
+      <!----=============Cancer Predictor using knn==========================-->
+     <div class="project-card" data-category="ai">
+        <h3>Cancer Predictor using knn</h3><br><br>
+        <img src="assets/img/ai_3.PNG" alt="Cancer Predictor using Knn"><br><br>
+        <p><strong>Cancer Predictor using knn</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
         </p>
-        <div class="tags">
-          <span>Next.js</span>
-          <span>Tailwind</span>
-          <span>Shadcn/ui</span>
-          <span>Next-auth</span>
-          <span>Prisma</span>
-        </div>
+         <a href="https://cancerpredictorusingknn-2tdpqybpuzuusxhkqmjiqr.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
       </div>
+      <!----=============Cancer Predictor using svm==========================-->
+      <div class="project-card" data-category="ai">
+        <h3>Cancer Predictor using Svm</h3><br><br>
+        <img src="assets/img/ai4.PNG" alt="Cancer Predictor using Svm"><br><br>
+        <p><strong>Cancer Predictor using Svm</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
+        </p>
+         <a href="https://cancerpredictorusingsvm-okduxax8bppjkw3extcpc2.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+      <!----=============📈 Stock Price Predictor==========================-->
+      <div class="project-card" data-category="ai">
+        <h3>📈 Stock Price Predictor</h3><br><br>
+        <img src="assets/img/AI_5.PNG" alt="📈 Stock Price Predictor"><br><br>
+        <p><strong>📈 Stock Price Predictor using Random Forest Regressor</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
+        </p>
+         <a href="https://stockpredictorusinglogisticregression-n5wcp3da6ukappxkijpjrqw.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+      <!----=============Purchasing Probability Predictor==========================-->
+      <div class="project-card" data-category="ai">
+        <h3>Purchasing Probability Predictor</h3><br><br>
+        <img src="assets/img/ai_6.PNG" alt="Purchasing Probability Predictor"><br><br>
+        <p><strong>Purchasing Probability Predictor</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
+        </p>
+         <a href="https://onlinepurchasepredictorusinglogisticregression-2ibsih3ydhmxtvg.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+      <!----=============Standing Quarter Mile Time Predictor==========================-->
+      <div class="project-card" data-category="ai">
+        <h3>Standing Quarter Mile Time Predictor</h3><br><br>
+        <img src="assets/img/ai_7.PNG" alt="Standing Quarter Mile Time Predictor"><br><br>
+        <p><strong>Standing Quarter Mile Time Predictor</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
+        </p>
+         <a href="https://vehiclequartermiletimepredictorusingdecisiontreeregreappr-9dzx.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+      <!----=============Your Class According to your income==========================-->
+      <div class="project-card" data-category="ai">
+        <h3>Your Class According to your income</h3><br><br>
+        <img src="assets/img/ai_8.PNG" alt="Your Class According to your income"><br><br>
+        <p><strong>Your Class According to your income</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
+        </p>
+         <a href="https://incomeclasspredictorusingkmeanclustering-prr5jpcc9uqqcq2odgzpb.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+      <!----=============📊 Customer Churn Prediction==========================-->
+      <div class="project-card" data-category="ai">
+        <h3>📊 Customer Churn Prediction</h3><br><br>
+        <img src="assets/img/ai_9.PNG" alt="📊 Customer Churn Prediction"><br><br>
+        <p><strong>📊 Customer Churn Prediction</strong><br><br>
+          Designed a portfolio using Figma, focusing on modern layout, responsive design principles, and user-friendly navigation to showcase skills, projects, and achievements effectively.
+
+        </p>
+         <a href="https://customerwillchurnornotusingann-cqb6mcfgdjsiayhpykbiqu.streamlit.app/" target="_blank" class="visit-btn">
+    Visit <i class="fa fa-external-link"></i>
+</a>
+        
+      </div>
+      
     </div> <!-- End of projects-track -->
 
     <button class="slider-btn right" onclick="scrollProjects('right')">&#8594;</button>
   </div> <!-- End of projects-slider -->
 </section>
-
-
+</div>
 <!---===============================Contact=======================================-->
-<section  id="contact" class="contact-section">
+<section id="contact" class="contact-section">
   <h2>Let's Connect</h2>
   <p class="subtitle">I'm always interested in discussing AI, machine learning, and data science opportunities.</p>
 
@@ -184,52 +437,63 @@
     <div class="contact-card">
       <i class="fas fa-envelope"></i>
       <h3>Email</h3>
-      <p>saliqaarshad99@gmail.com</p>
+      <p><a href="mailto:saliqaarshad99@gmail.com">saliqaarshad99@gmail.com</a></p>
     </div>
+
     <div class="contact-card">
       <i class="fas fa-phone"></i>
       <h3>Phone</h3>
-      <p>(+92) 3335146840</p>
+      <p><a href="tel:+923335146840">(+92) 3335146840</a></p>
     </div>
+
     <div class="contact-card">
-  <a href="https://www.linkedin.com/in/saliqa-arshad-60aa34237/" target="_blank">
-    <i class="fab fa-linkedin"></i>
-    <h3>LinkedIn</h3>
-    <p>Connect with me</p>
-  </a>
+      <a href="https://www.linkedin.com/in/saliqa-arshad-60aa34237/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p>Connect with me</p>
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <a href="https://github.com/YourGitHubUsername" target="_blank">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p>View my code</p>
+      </a>
+    </div>
+  </div>
+
+ <div class="contact-form-wrapper">
+  <h3>Send me a message</h3>
+  <form id="contact-form">
+  <div class="form-row">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="reply_to" placeholder="Your Email" required>
+  </div>
+
+  <div class="form-row">
+    <input type="text" name="subject" placeholder="Subject">
+  </div>
+
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
 </div>
 
-    <div class="contact-card">
-      <i class="fab fa-github"></i>
-      <h3>GitHub</h3>
-      <p>View my code</p>
-    </div>
-  </div>
-
-  <div class="contact-form-wrapper">
-    <h3>Send me a message</h3>
-    <form>
-      <div class="form-row">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-      </div>
-      <input type="text" placeholder="Subject">
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
 </section>
 
 
-
-  <!-- Dark Mode Toggle Button -->
-  <button id="toggle-mode" title="Toggle dark mode">🌙</button>
+  
 
   <script src="main.js"></script>
 <!--===========footer===========-->
 <footer class="site-footer">
   <div class="footer-content">
-    <p>&copy; 2025 Saliqa Arshad. All rights reserved.</p>
+    <div class="footer-text">
+        <p>Developed By <a href="#" class="bd">Saliqa Arshad</a></p>
+    </div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/saliqa-arshad-60aa34237/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/saliqaarshad" target="_blank"><i class="fab fa-github"></i></a>
