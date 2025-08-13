@@ -1,38 +1,22 @@
-const toggleBtn = document.getElementById('toggle-mode');
-const navLinks = document.querySelectorAll('.navbar a');
-const sections = document.querySelectorAll('section');
+// ===== Select Elements =====
+const navLinks = document.querySelectorAll('.navbar ul li a');
+const sections = document.querySelectorAll('section[id]');
 
-// Theme toggle
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-});
-
-// Load saved theme
+// Run when DOM is loaded
 window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark');
-    toggleBtn.textContent = '☀️';
-  } else {
-    toggleBtn.textContent = '🌙';
-  }
-
   // Set Home (first link) active by default
   navLinks[0].classList.add('active');
 });
 
-// Highlight active section on scroll
+// ===== Highlight Active Section on Scroll =====
 window.addEventListener('scroll', () => {
-  let currentSectionId = 'hero'; // fallback
+  let currentSectionId = '';
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 130; // adjust if navbar overlaps
-    const sectionBottom = sectionTop + section.offsetHeight;
-
-    if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-      currentSectionId = section.getAttribute('id');
+    const sectionTop = section.offsetTop - 150; // adjust for navbar height
+    const sectionHeight = section.offsetHeight;
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      currentSectionId = section.id;
     }
   });
 
@@ -44,7 +28,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Project section scroll arrows
+// ===== Project Section Scroll Arrows =====
 function scrollProjects(direction) {
   const track = document.getElementById('projects-track');
   const scrollAmount = 500;
@@ -55,3 +39,48 @@ function scrollProjects(direction) {
     track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   }
 }
+
+// ===== Tab Filtering for Projects =====
+const tabButtons = document.querySelectorAll(".tab-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+tabButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    // Remove 'active' from all tabs
+    tabButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const category = button.dataset.tab;
+
+    // Show/Hide projects
+    projectCards.forEach(card => {
+      if (category === "all" || card.dataset.category === category) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+
+src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+
+  (function(){
+    emailjs.init("EGpKOs5x0bTT3vjP3"); // Replace with your EmailJS Public Key
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_l3auciu', 'template_uhut7ib', this)
+  .then(function(response) {
+    alert('Message sent successfully!');
+    console.log('EmailJS response:', response);
+  })
+  .catch(function(error) {
+    alert('Failed to send message: ' + JSON.stringify(error));
+    console.error('EmailJS error:', error);
+  });
+
+  });
+
