@@ -97,7 +97,6 @@ body.dark .navbar ul li a.active {
   background: #e6fcef;
   color: #000;
   border: 1px solid #ccc;
-  padding: 4px 12px;
   font-size: 14px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -167,7 +166,8 @@ body.dark .navbar ul li a.active {
 
 /* New layout styles */
 .hero {
-  padding: 100px 10%;
+  padding: 1px 10%;
+  scroll-margin-top: 50px;
 }
 
 .hero-content {
@@ -277,9 +277,7 @@ body.dark footer {
 }
 
 /* About Section */
-#about {
-  scroll-margin-top: 100px; /* adjust to your navbar height */
-}
+
 .about-container {
     max-width: 1400px; /* Adjust this to control the width of the box */
     margin: 50px auto; /* Centers the container on the page */
@@ -299,6 +297,7 @@ body.dark footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin-top: 150px;
 }
 
 .about-section h1 {
@@ -339,7 +338,7 @@ body.dark footer {
   height: 40px;
 }
 #experience {
-  scroll-margin-top: 20px; /* adjust to your navbar height */
+  scroll-margin-top: 50px; /* adjust to your navbar height */
 }
 .experience-section {
   padding: 60px 20px;
@@ -428,6 +427,9 @@ body.dark footer {
   color: #333;
 }
 /*-------project*/
+.projects-section{
+  scroll-margin-top: 150px;
+}
 .projects-slider {
   position: relative;
   display: flex;
@@ -444,6 +446,7 @@ body.dark footer {
     border-radius: 12px; /* Rounds the corners */
     color: #333; /* Sets a dark text color for contrast against the white background */
     text-align: center;
+    
 }
 .projects-track {
   display: flex;
@@ -572,6 +575,7 @@ body.dark .project-card h3 {
   border-radius: 25px;
   transition: background 0.3s;
   font-weight: bolder;
+  font-size: 15px;
 }
 
 .tab-btn.active {
@@ -596,6 +600,7 @@ body.dark .project-card h3 {
   color: #000000;
   padding: 60px 20px;
   text-align: center;
+  scroll-margin-top: 50px;
 }
 
 .contact-section h2 {
